@@ -1,2 +1,5 @@
-# Product-preview-card-component
-This repository for solving "Product preview card component" challenge from Front-End Mentor challenges.
+# Frontend Mentor - Product preview card component
+
+![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+
+## Welcome! 👋

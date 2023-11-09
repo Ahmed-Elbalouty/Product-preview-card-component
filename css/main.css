@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container .image img{
+    height: 100%;
+    width: 300px;
+}
+.container .content{
+    padding: 20px 40px 20px 30px;
+}
+.container .content > span{
+    display: block;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+}
+.container .content h2{
+    max-width: 200px;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 30px;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+.container .content p{
+    max-width: 250px;
+    line-height: 1.6;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 30px;
+}
+.container .price{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.container .price span{
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+.container .price del{
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+}
+.container .button{
+    text-decoration: none;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    border-radius: 6px;
+    transition: .3s;
+}
+.container .button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+.container .button img{
+    margin-right: 10px;
+}
+@media (max-width: 767px) {
+    .container{
+        flex-direction: column;
+        width: 340px;
+        height: auto;
+        margin: 30px auto;
+    }
+    .container .image img{
+        display: none;
+    }
+    .container .image {
+        background-image: url(../images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 340px;
+        height: 230px;
+    }
+    .container .content > span,
+    .container .content h2,
+    .container .content p,
+    .container .button{
+        margin-bottom: 20px;
+    }
+    .container .button{
+        margin-top: 20px;
+    }
+}
